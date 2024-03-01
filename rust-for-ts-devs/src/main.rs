@@ -1,10 +1,18 @@
-fn main() {
-    let file = std::fs::read_to_string("lines").unwrap();
-    file.lines()
-        .enumerate()
-        .filter(|(idx, _)| idx % 2 == 0)
-        .skip(2)
-        .take(2)
-        .for_each(|(_, line)| println!("{}", line));
-}
+mod shapes;
+use crate::shapes::{area::Area, circle::Circle, rect::Rect};
 
+fn main() {
+    let rect = Rect::default();
+
+    let circ = Circle {
+        x: 0.0,
+        y: 0.0,
+        radius: 10.0,
+    };
+
+    println!("{}", rect);
+    println!("{}", rect.area());
+    println!("{}", circ.area());
+
+    for point in &rect {}
+}
