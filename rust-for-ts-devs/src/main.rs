@@ -13,6 +13,4 @@ fn main() {
     println!("{}", rect);
     println!("{}", rect.area());
     println!("{}", circ.area());
-
-    for point in &rect {}
 }
