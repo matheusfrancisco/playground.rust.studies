@@ -1,4 +1,5 @@
-#[derive(Debug)]
+#Error executing vim.schedule lua callback: ...im-linux64/share/nvim/runtime/lua/vim/lsp/inlay_hint.lua:377: filter: expected table, got number
+[derive(Debug)]
 struct Item {
     count: usize,
 }
