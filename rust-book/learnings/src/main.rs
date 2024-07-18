@@ -1,3 +1,5 @@
+mod ownership;
+
 fn main() {
     let x = 5;
     //x = 6; x is immutable
@@ -71,3 +73,4 @@ fn main() {
 fn another_function() {
     println!("Another function.");
 }
+

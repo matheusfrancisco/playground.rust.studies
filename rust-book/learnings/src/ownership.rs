@@ -1,4 +1,4 @@
-//memory is managed through a system of ownership with a set of rules that the
+//meory is managed through a system of ownership with a set of rules that the
 //compiler checks at compile time. No run-time costs are incurred for any
 //of the ownership features.
 
@@ -13,7 +13,7 @@ fn main() {
     let s1 = String::from("hello");
     let s2 = s1; // Move (not shallow copy)
                  //
-    takes_ownership1(s); // s's value moves into the function...
+    takes_ownership1(s2); // s's value moves into the function...
                          // ... and so is no longer valid here.
 
     let x = 5; // x comes into scope.
