@@ -1,4 +1,4 @@
-fn main() {
+pub fn main2() {
     println!("Hello, world!");
     another_function();
     my_fn(1, 2);
@@ -15,3 +15,4 @@ fn my_fn(x: i32, y: i32) {
 fn five() -> i32 {
     5
 }
+

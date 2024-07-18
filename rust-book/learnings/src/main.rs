@@ -1,6 +1,9 @@
-mod ownership;
+use crate::ownership::helloy;
+pub mod ownership;
+mod functions;
 
 fn main() {
+    helloy();
     let x = 5;
     //x = 6; x is immutable
     //to mut add mut
@@ -73,4 +76,3 @@ fn main() {
 fn another_function() {
     println!("Another function.");
 }
-
