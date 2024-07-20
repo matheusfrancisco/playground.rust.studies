@@ -1,5 +1,16 @@
 use std::fmt::{Debug, Display};
 
+struct Pair<T> {
+    x: T,
+    y: T,
+}
+
+impl<T> Pair<T> {
+    fn new(x: T, y: T) -> Self {
+        Self { x, y }
+    }
+}
+
 pub trait Summarizable {
     fn summary(&self) -> String {
         String::from("(Read more...)")
@@ -48,7 +59,7 @@ where
     T: Display + Clone,
     U: Clone + Debug,
 {
-  1
+    1
 }
 
 fn main() {}
