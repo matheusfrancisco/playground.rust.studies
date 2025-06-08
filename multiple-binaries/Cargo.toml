@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "database_lib",
+    "my_project",
+]
+resolver = "2"
