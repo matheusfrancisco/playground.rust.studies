@@ -2,7 +2,6 @@ use crate::serde_eg::convert_struct;
 mod fview;
 mod serde_eg;
 mod file;
-mod dbkv;
 
 fn main() {
     let args : Vec<String> = std::env::args().collect();
