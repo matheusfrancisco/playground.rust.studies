@@ -1,3 +1,9 @@
+//! Lifetimes and borrowing study crate.
+//!
+//! See the `exercises` module for 10 hands-on exercises on lifetimes, borrowing, and ownership.
+
+pub mod exercises;
+
 struct MyIterator<'a, T> {
     // this can live  as long the struct itself
     slices: &'a [T],
