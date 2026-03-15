@@ -1,9 +1,9 @@
-use entirely_too_many_linked_lists::first::List;
+use entirely_too_many_linked_lists::first::ListCons;
 
 fn main() {
-    let list: List<i32> = List::Cons(
+    let list: ListCons<i32> = ListCons::Cons(
         1,
-        Box::new(List::Cons(2, Box::new(List::Cons(3, Box::new(List::Nil))))),
+        Box::new(ListCons::Cons(2, Box::new(ListCons::Cons(3, Box::new(ListCons::Nil))))),
     );
     println!("{:?}", list);
 }
