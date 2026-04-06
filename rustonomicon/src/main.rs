@@ -3,6 +3,8 @@ use std::{collections::HashMap, hash::Hash, ptr::NonNull};
 use crate::hrtbs::{Closure, do_it};
 mod holder;
 mod hrtbs;
+mod sub;
+mod dropcheck;
 
 struct OwnedRaw<T> {
     ptr: *mut T,
