@@ -17,6 +17,10 @@ fn ex5_splitting_borrows_on_structs() {
     change_field(b_ref);
 
     println!("foo: a = {}, b = {}", foo.a, foo.b);
+
+    let mut a = vec![1, 2, 3];
+    let b = &mut a[0];
+    let c = &mut a[1];
 }
 
 #[test]

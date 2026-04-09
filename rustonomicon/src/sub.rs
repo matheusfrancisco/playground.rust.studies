@@ -11,7 +11,6 @@ pub fn strtok<'a, 'b>(s: &'a mut &'b str, delimiter: char) -> &'b str {
     }
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;
